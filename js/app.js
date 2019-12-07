@@ -262,7 +262,6 @@ function gameback() {
 	} 
 }
 
-
 function restart() {
 	var r = confirm("确定要重新开始游戏吗？");
 	if (r == true) {
@@ -271,5 +270,8 @@ function restart() {
 	
 }
 
+function git() {
+	window.location.href = "https://github.com/ShawnZhou2000/big-arrest-game";
+}
 
 addCircles();
