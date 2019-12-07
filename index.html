@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>大逮捕游戏</title>
+		<script src="js/easeljs.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Circle.js" type="text/javascript" charset="utf-8"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<div class="menu" id="menu">
+			<h1>大 逮 捕</h1>
+			<h2>抓住试图逃跑的精灵!</h2>
+			<p>beta version</p>
+			<p>
+				<button type="button" class="btn btn-primary btn-large" onclick="start()">开始游戏</button>
+			</p>
+			<p>
+				<button type="button" class="btn btn-primary btn-large" onclick="help()">游戏说明</button>
+			</p>
+			<p>ShawnZhou 2019.12</p>
+		</div>
+		<div class="help" id="help">
+			<h1>游戏说明</h1>
+			<img src="img/help.png" class="img-fluid" style="max-width: 360px;">
+			<p>
+				在如图所示的棋盘内，有一个试图逃跑的蓝色精灵，它会沿着灰色的点逃走！<br>
+				你可以单击灰色区域放置障碍物使其变成橙色，橙色的点精灵无法通过。<br>
+				如果蓝色精灵无路可走，玩家获得胜利！<br>
+				如果蓝色精灵走出棋盘之外，玩家游戏失败！<br>
+				祝好运！
+			</p>
+			<p>
+				<button type="button" class="btn btn-primary btn-large" onclick="start()">开始游戏</button>
+			</p>
+			<p>
+				<button type="button" class="btn btn-primary btn-large" onclick="back()">返回主界面</button>
+			</p>
+		</div>
+		<div class="game" id="game">
+			<div class="game-inner">
+				<canvas id="gameView" width="550px" height="520px"></canvas>
+				<p style="text-align: center;">
+					步数：<span id="score">0</span>
+					<br>
+					<button type="button" class="btn btn-primary btn-large" onclick="gameback()" style="margin-top: 2%;">返回主界面</button>
+					<button type="button" class="btn btn-primary btn-large" onclick="restart()" style="margin-top: 2%; margin-left: 2%;">重新开始</button>
+				</p>
+			</div>
+		</div>
+		<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+		<!-- <br>
+		<audio controls>
+		  <source src="source/bgm.mp3" type="audio/mpeg">
+		</audio> -->
+		<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	</body>
+</html>

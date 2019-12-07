@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+
+canvas {
+	display: block;
+}
+
+.menu,
+.help {
+	text-align: center;
+	margin-top: 5%;
+}
+
+.menu h1 {
+	font-size: 70px;
+}
+
+.menu h2 {
+	margin-top: 3%;
+}
+
+.menu p {
+	font-size: 22px;
+	margin-top: 2%;
+}
+
+.help {
+	display: none;
+}
+
+.game {
+	display: none;
+	width: 100%;
+	margin-top: 3%;
+}
+
+.game-inner {
+	width: 35%;
+	margin: 0 auto;
+}
